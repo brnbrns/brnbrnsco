@@ -84,34 +84,34 @@ header {
 .resume {
   margin-left: -50%;
   text-align: left;
-	-moz-box-shadow:inset 0px 1px 0px 0px #00ca8b;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #00ca8b;
-	box-shadow:inset 0px 1px 0px 0px #00ca8b;
-	background-color:#00ca8b;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
-	border:1px solid #00a870;
-	display:inline-block;
-	cursor:pointer;
-	color:#fff;
-	font-family:"Source Sans Pro", sans-serif;
-	font-size:13px;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #3b806a;
+	-moz-box-shadow: inset 0px 1px 0px 0px #00ca8b;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #00ca8b;
+	box-shadow: inset 0px 1px 0px 0px #00ca8b;
+	background-color: #00ca8b;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #00a870;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 0.8125em;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #3b806a;
 }
 
 .resume:hover {
-	background-color:#00a870;
-  -moz-box-shadow:inset 0px 1px 0px 0px #00a870;
-  -webkit-box-shadow:inset 0px 1px 0px 0px #00a870;
-  box-shadow:inset 0px 1px 0px 0px #00a870;
+	background-color: #00a870;
+  -moz-box-shadow: inset 0px 1px 0px 0px #00a870;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #00a870;
+  box-shadow: inset 0px 1px 0px 0px #00a870;
 }
 
 .resume:active {
-	position:relative;
-	top:1px;
+	position: relative;
+	top: 1px;
 }
 
 .aboutRight {
@@ -245,21 +245,27 @@ header {
   color: white;
 }
 
+.contactLeft {
+  float: left;
+  width: 40%;
+}
+
 .forms {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 1.25em;
   border: none;
-  margin-bottom: 2.5%;
-  margin-left: 5%;
+  /*margin-bottom: 5%;*/
+  /*margin-left: 10%;*/
+  margin: 0 auto 5%;
+  vertical-align: center;
   padding: 10px;
-  width: 40%;
+  width: 85%;
   display: block;
 }
 
 .messagebox {
-  margin-bottom: 0;
   padding-bottom: 5%;
 }
 
@@ -276,6 +282,29 @@ header {
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
    color: white;
+}
+
+.submitButton {
+	background-color: white;
+	border-radius: 3px;
+	border: none;
+	display: block;
+	cursor: pointer;
+	color: #5c5c5c;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 1.25em;
+	padding: 0.5% 1.5%;
+	text-decoration: none;
+  margin: 0 auto;
+}
+
+.submitButton:hover {
+	background-color: #e3e3e3;
+}
+
+.submitButton:active {
+	position: relative;
+	top: 1px;
 }
 
 /* Float Clearfix */
