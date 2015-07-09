@@ -16,17 +16,23 @@
 
     <title>Brian Burns</title>
   </head>
+
   <body>
+    <!-- Full height header -->
     <header>
       <h1 class="title">brian burns&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;developer</h1>
       <a href="#about"><img class="downarrow" src="img/arrow.svg" alt="A down arrow"></a>
     </header>
+
+    <!-- About Section -->
     <div class="about clearfix">
       <a name="about"></a>
+      <!-- Left Side -->
       <div class="aboutLeft">
         <img src="img/headshot.png" alt="A picture of Brian Burns">
         <a href="Resume.pdf" class="resume">&darr; Resume</a>
       </div>
+      <!-- Right Side -->
       <div class="aboutRight">
         <h2>About Me</h2>
         <p>
@@ -34,6 +40,8 @@
         </p>
       </div>
     </div>
+
+    <!-- Projects Section -->
     <div class="projects clearfix">
       <h2>Projects</h2>
       <a href="https://github.com/brnbrns/BoggleSolver"><h3>Boggle Solver</h3></a>
@@ -42,9 +50,12 @@
         Boggle Solver is an application written in Java that can solve Boggle style letter boards of any size, displaying every valid word on the board with tremendous speed.
       </p>
     </div>
+
+    <!-- Skills Section -->
     <div class="skills clearfix">
       <h2>Skills</h2>
       <br>
+        <!-- Python -->
         <div class="language python">
           <a href="https://python.org">
             <img src="img/python.png" alt="An image of the Python logo">
@@ -52,6 +63,7 @@
             <h3>Python</h3>
           </a>
         </div>
+        <!-- Java -->
         <div class="language java">
           <a href="https://java.com">
             <img src="img/java.png" alt="An image of the Java logo">
@@ -59,6 +71,7 @@
             <h3>Java</h3>
           </a>
         </div>
+        <!-- CSS -->
         <div class="language css">
           <a href="http://www.w3.org/Style/CSS/">
             <img src="img/css.png" alt="An image of the CSS logo">
@@ -66,6 +79,7 @@
             <h3>CSS</h3>
           </a>
         </div>
+        <!-- HTML -->
         <div class="language html">
           <a href="http://www.w3.org/html/">
             <img src="img/html.png" alt="An image of the HTML logo">
@@ -74,14 +88,18 @@
           </a>
         </div>
       </div>
-      <div class="contact">
+      <!-- Contact Section -->
+      <div class="contact clearfix">
         <h2>Contact</h2>
         <h3>Want to get in touch?</h3>
-        <form action="index.html" method="post">
-          <input type="text" class="forms" name="contact_name" placeholder="name">
-          <input type="email" class="forms" name="contact_email" placeholder="email">
-          <textarea class="forms messagebox" name="contact_message" placeholder="message"></textarea>
-        </form>
+        <!-- Left Side -->
+        <div class="contactLeft">
+          <form action="index.html" method="post">
+            <input type="text" class="forms" name="contact_name" placeholder="name">
+            <input type="email" class="forms" name="contact_email" placeholder="email">
+            <textarea class="forms messagebox" name="contact_message" placeholder="message"></textarea>
+          </form>
+        </div>
       </div>
   </body>
 </html>
