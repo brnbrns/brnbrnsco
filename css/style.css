@@ -322,6 +322,21 @@ header {
   width: 40%;
 }
 
+.contactRight a {
+  color: white;
+  font-size: 1.25em;
+}
+
+.contactRight a:hover {
+  color: #e3e3e3;
+}
+
+/* Font Icons */
+
+.fa {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 /* Float Clearfix */
 
 .clearfix:after {
