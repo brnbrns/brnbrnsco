@@ -238,7 +238,8 @@ header {
 .contact h2 {
   color: white;
   border-bottom: 3px solid #5c5c5c;
-  margin-bottom: 0;
+  margin-bottom: 2.5%;
+  margin-left: 2.5%;
 }
 
 .contact h3 {
@@ -248,6 +249,10 @@ header {
 .contactLeft {
   float: left;
   width: 40%;
+}
+
+.contactLeft h3 {
+  text-align: center;
 }
 
 .forms {
@@ -261,7 +266,7 @@ header {
   margin: 0 auto 5%;
   vertical-align: center;
   padding: 10px;
-  width: 85%;
+  width: 90%;
   display: block;
 }
 
@@ -305,6 +310,16 @@ header {
 .submitButton:active {
 	position: relative;
 	top: 1px;
+}
+
+.contactCenter {
+  text-align: center;
+  vertical-align: center;
+}
+
+.contactRight {
+  float: right;
+  width: 40%;
 }
 
 /* Float Clearfix */
