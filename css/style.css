@@ -249,10 +249,12 @@ header {
 .contactLeft {
   float: left;
   width: 40%;
+  margin-left: 2.5%;
 }
 
 .contactLeft h3 {
   text-align: center;
+  margin: 5% 0;
 }
 
 .forms {
@@ -261,10 +263,7 @@ header {
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 1.25em;
   border: none;
-  /*margin-bottom: 5%;*/
-  /*margin-left: 10%;*/
   margin: 0 auto 5%;
-  vertical-align: center;
   padding: 10px;
   width: 90%;
   display: block;
@@ -314,12 +313,15 @@ header {
 
 .contactCenter {
   text-align: center;
-  vertical-align: center;
+  margin-top: 15%;
 }
 
 .contactRight {
   float: right;
   width: 40%;
+  margin-top: 4%;
+  /*margin-right: 5%;*/
+  text-align: center;
 }
 
 .contactRight a {
@@ -331,10 +333,24 @@ header {
   color: #e3e3e3;
 }
 
+.contactMethod {
+  margin: 8.26% auto;
+}
+
+.mobileMethod {
+  margin-left: -7px;
+}
+
 /* Font Icons */
 
 .fa {
   color: rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  vertical-align: middle;
+}
+
+.fa-mobile {
+  font-size: 3em;
 }
 
 /* Float Clearfix */
