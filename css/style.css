@@ -380,6 +380,14 @@ footer {
   color: white;
 }
 
+/* Media Queries */
+
+@media (max-width: 768px) {
+  header {
+    height: 30vh;
+  }
+}
+
 /* Float Clearfix */
 
 .clearfix:after {
