@@ -382,7 +382,8 @@ footer {
 
 /* Media Queries */
 
-@media (max-width: 768px) {
+@media only screen
+  and (max-device-width: 736px) {
   header {
     height: 30vh;
   }
