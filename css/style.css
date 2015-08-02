@@ -40,6 +40,31 @@ a {
   text-decoration: none;
 }
 
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  background-color: #00ca8b;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.navbar span {
+  color: white;
+  font-size: 1.75em;
+  margin-right: 2.5%;
+  border-bottom: 3px solid #5c5c5c;
+}
+
+#navbarName {
+  border-bottom: 0px;
+  font-weight: bold;
+  margin-right: 25%;
+}
+
 /* Header */
 
 header {
@@ -68,6 +93,7 @@ header {
 
 .about {
   margin-top: 10%;
+  box-shadow: 20px 0 0 0 rgba(0, 0, 0, 0.8);
 }
 
 .aboutLeft {
@@ -395,4 +421,8 @@ footer {
   content: "";
   display: table;
   clear: both;
+}
+
+.hidden {
+  display: none;
 }
