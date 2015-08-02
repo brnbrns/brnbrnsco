@@ -23,4 +23,39 @@ $(document).ready(function() {
       $('.navbar').fadeOut();
     }
   });
+
+  // Navbar home button
+  $('.navbarHome').click(function() {
+    $('html, body').animate({
+      scrollTop: '0px'
+    }, 750);
+  });
+
+  // Navbar about button
+  $('.navbarAbout').click(function() {
+    $('html, body').animate({
+      scrollTop: ($('.about').offset().top) - 150
+    }, 750);
+  });
+
+  // Navbar projects button
+  $('.navbarProjects').click(function() {
+    $('html, body').animate({
+      scrollTop: ($('.projects').offset().top) - 25
+    }, 750);
+  });
+
+  // Navbar skills button
+  $('.navbarSkills').click(function() {
+    $('html, body').animate({
+      scrollTop: ($('.skills').offset().top) - 25
+    }, 750);
+  });
+
+  // Navbar projects button
+  $('.navbarContact').click(function() {
+    $('html, body').animate({
+      scrollTop: ($('.contact').offset().top) - 25
+    }, 750);
+  });
 });

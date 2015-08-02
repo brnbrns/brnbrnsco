@@ -59,6 +59,10 @@ a {
   border-bottom: 3px solid #5c5c5c;
 }
 
+.navbar span:hover {
+  border-bottom: 0px;
+}
+
 #navbarName {
   border-bottom: 0px;
   font-weight: bold;
