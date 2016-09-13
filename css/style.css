@@ -244,18 +244,22 @@ header {
   padding: 10%;
 }
 
-.html {
+.javascript {
   float: right;
   margin-right: 4%;
 }
 
-.html img {
+.javascript img {
   padding: 10%;
 }
 
-.css {
+.c {
   float:right;
   margin-right: 4%;
+}
+
+.c img {
+  padding: 5%;
 }
 
 /* Contact */
