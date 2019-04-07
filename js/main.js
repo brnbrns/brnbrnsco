@@ -4,7 +4,14 @@
 * brnbrns.co  *
 **************/
 
+var URL = 'https://x6nqykeske.execute-api.us-east-1.amazonaws.com/production/contact-me';
+
 $(document).ready(function() {
+  // Redirect http
+  if (location.protocol == 'http:') {
+    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+  }
+
   // Scroll down to About on arrow click
   $('.downarrow').click(function() {
     $('html, body').animate({
@@ -57,5 +64,45 @@ $(document).ready(function() {
     $('html, body').animate({
       scrollTop: ($('.contact').offset().top) - 25
     }, 750);
+  });
+  
+  $('#submitBtn').click(function(e) {
+    e.preventDefault();
+	
+	var name = $('#name').val();
+	var email = $('#email').val();
+	var message = $('#message').val();
+	
+	if (!name || !email || !message) {
+	  alert('Please fill out all fields');
+	  return;
+	}
+	
+	var reEmail = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+    if (!reEmail.test(email)) {
+	  alert ('Please enter a valid email address');
+      return;
+    }
+	
+	var req = {
+	  name: name,
+	  email: email,
+	  message: message
+	};
+	
+	$.ajax({
+      type: "POST",
+      url : URL,
+      dataType: "json",
+      crossDomain: "true",
+      contentType: "application/json; charset=utf-8",
+      data: JSON.stringify(req),
+      success: function () {
+        alert("Thank you for your message!");
+        $('#contactForm').reset();
+      }, error: function () {
+        alert("Something went wrong. Please try to send your message again later, or contact me by email directly.");
+      }
+	});
   });
 });

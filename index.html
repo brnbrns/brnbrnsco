@@ -10,15 +10,15 @@
     <!-- Google Apps -->
     <meta name="google-site-verification" content="EA02yrWKQ4oLULq7RhCLdmUJD54vH-w6HkCfjDnDb1E" />
     <!-- Source Sans Pro Font -->
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <!-- JavaScript -->
-    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script>
 
     <title>Brian Burns</title>
@@ -52,7 +52,7 @@
       <div class="aboutRight">
         <h2>About Me</h2>
         <p>
-          I'm an aspiring software engineer from Orange County, CA. I'm currently in my senior year of undergraduate study, on track to earning degrees in Computer Science and Mathematics. I have a passion for learning and like to spend my free time writing software and discovering new technologies.
+          I'm a software engineer from Orange County, CA. I'm currently working for Verizon in the Dallas/Fort Worth area. I have earned degrees in Computer Science and Mathematics from the University of Alabama. I have a passion for learning and like to spend my free time writing software and discovering new technologies.
         </p>
       </div>
     </div>
@@ -111,22 +111,16 @@
         <!-- Left Side -->
         <div class="contactLeft">
           <h3>Want to get in touch?</h3>
-          <form action="mail.php" method="post">
-            <input type="text" class="forms" name="contact_name" placeholder="name">
-            <input type="email" class="forms" name="contact_email" placeholder="email">
-            <textarea class="forms messagebox" name="contact_message" placeholder="message"></textarea>
-            <button type="submit" class="submitButton">Submit</button>
+          <form id="contactForm" method="post">
+            <input id="name" type="text" class="forms" name="contact_name" placeholder="name">
+            <input id="email" type="email" class="forms" name="contact_email" placeholder="email">
+            <textarea id="message" class="forms messagebox" name="contact_message" placeholder="message"></textarea>
+            <button type="submit" class="submitButton" id="submitBtn">Submit</button>
           </form>
         </div>
 
         <!-- Right Side -->
         <div class="contactRight">
-          <!-- Phone -->
-          <div class="contactMethod mobileMethod">
-            <i class="fa fa-mobile contactIcons"></i>
-            <a href="tel:+19495840240">+1 (949) 584-0240</a>
-            <br>
-          </div>
           <!-- Email -->
           <div class="contactMethod">
             <i class="fa fa-envelope-o contactIcons"></i>
@@ -152,7 +146,7 @@
           <a href="https://www.linkedin.com/pub/brian-burns/83/435/969"><i class="fa fa-linkedin"></i></a>
           <a href="https://github.com/brnbrns"><i class="fa fa-github-square"></i></a>
         </div>
-        <span class="copyright">&copy; 2016 Brian Burns</span>
+        <span class="copyright">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Brian Burns</span>
       </footer>
   </body>
 </html>
