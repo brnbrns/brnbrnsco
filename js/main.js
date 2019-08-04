@@ -93,13 +93,13 @@ $(document).ready(function() {
 	$.ajax({
       type: "POST",
       url : URL,
-      dataType: "json",
+      dataType: "text",
       crossDomain: "true",
       contentType: "application/json; charset=utf-8",
       data: JSON.stringify(req),
       success: function () {
         alert("Thank you for your message!");
-        $('#contactForm').reset();
+        $('#contactForm')[0].reset();
       }, error: function () {
         alert("Something went wrong. Please try to send your message again later, or contact me by email directly.");
       }
