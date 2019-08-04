@@ -4,7 +4,7 @@
 * brnbrns.co  *
 **************/
 
-var URL = 'https://x6nqykeske.execute-api.us-east-1.amazonaws.com/production/contact-me';
+var URL = 'https://brnbrns.azurewebsites.net/api/ContactEmail';
 
 $(document).ready(function() {
   // Redirect http
